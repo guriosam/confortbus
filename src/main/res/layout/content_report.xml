@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ReportActivity"
+    tools:showIn="@layout/activity_report">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Calcular quantidade de ônibus"
+                    android:textSize="24dp" />
+
+            </RelativeLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Linha:"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/bus_line_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="Graciliano - PV" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Capacidade do Tanque:"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/tank_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="300 L" />
+
+            </LinearLayout>
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Consumo de combustível:"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/fuel_consuption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="_ Km/L" />
+
+            </LinearLayout>
+        -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Max Pessoas Sentadas Onibus T1:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/cap_bus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ pessoas"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Max Pessoas Sentadas Onibus T2:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/cap_bus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ pessoas"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Max Pessoas Sentadas Onibus T3:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/cap_bus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ pessoas"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Ônibus T1 disponíveis:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/available_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ ônibus"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Ônibus T2 disponíveis:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/available_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ ônibus"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Ônibus T3 disponíveis:"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/available_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ ônibus"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Valor do Diesel"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/diesel_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:text="R$ 4,00"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+
+            <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:gravity="center_vertical"
+                        android:text="Salário do Motorista: "
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/driver_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:layout_marginLeft="8dp"
+                        android:text="R$ 1.500" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:gravity="center_vertical"
+                        android:text="Salário do Cobrador: "
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/moneytaker_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:layout_marginLeft="8dp"
+                        android:text="R$ 1.200" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:gravity="center_vertical"
+                        android:text="Jornada de Trabalho: "
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/jornada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_block"
+                        android:layout_marginLeft="8dp"
+                        android:text="8 horas" />
+
+                </LinearLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:text="Demanda"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/demanda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="bottom"
+                    android:hint="_ pessoas"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Consumo ônibus T1: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="3 Km/L" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Consumo ônibus T2: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="2 Km/L" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_block"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:gravity="center_vertical"
+                    android:text="Consumo ônibus T3: "
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/jornada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_block"
+                    android:layout_marginLeft="8dp"
+                    android:text="5 Km/L" />
+
+            </LinearLayout>
+            
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Total: _ ônibus"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_block"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@color/button_blue"
+        android:gravity="center"
+        android:text="Calcular"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

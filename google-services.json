@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "602987597913",
+    "firebase_url": "https://confortbus-3d4ca.firebaseio.com",
+    "project_id": "confortbus-3d4ca",
+    "storage_bucket": "confortbus-3d4ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602987597913:android:4a94a1f8346f2f9e",
+        "android_client_info": {
+          "package_name": "sam.gurio.confortbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602987597913-0aucinoasopj53lfo0qob16cvg4oviac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sam.gurio.confortbus",
+            "certificate_hash": "def6fa41e537bc1a29f7aa2cd223092271af6c9b"
+          }
+        },
+        {
+          "client_id": "602987597913-01c1hl8ifjn5aqvnq9vcud94j94niqae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN7MLWq9aF_Gwp6fPG_IEXW4CTaIbzjGo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602987597913-01c1hl8ifjn5aqvnq9vcud94j94niqae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

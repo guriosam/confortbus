@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ConfortBus</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Usuário</string>
+    <string name="sign_up">Cadastra-se</string>
+    <string name="login">Entre</string>
+    <string name="or">ou</string>
+    <string name="password">Senha</string>
+    <string name="username_error">O usuário digitado não existe.</string>
+    <string name="title_activity_cadastro">CadastroActivity</string>
+    <string name="name">Nome</string>
+    <string name="email_hint">Email</string>
+    <string name="email">Email</string>
+    <string name="general_error">Desculpe, um erro ocorreu, por favor tente novamente.</string>
+    <string name="title_activity_list_bus">ListBusActivity</string>
+    <string name="title_activity_choose_seat">ChooseSeatActivity</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_choose_report">ChooseReportActivity</string>
+</resources>
